@@ -1,4 +1,4 @@
-package dev.jefersonwvs.notification.messaging;
+package dev.jefersonwvs.notification.messaging.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -12,15 +12,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQConfig {
 
-  static final String EXCHANGE = "ecommerce.exchange";
+  public static final String EXCHANGE = "ecommerce.exchange";
 
   // ROUTING KEYS
 
-  static final String PAYMENT_APPROVED_EVENT = "payment.approved";
+  public static final String PAYMENT_APPROVED_EVENT = "payment.approved";
 
   // QUEUES
 
-  static final String NOTIFICATION_PAYMENT_APPROVED_QUEUE = "notification.payment-approved";
+  public static final String NOTIFICATION_PAYMENT_APPROVED_QUEUE = "notification.payment-approved";
 
   @Bean
   public TopicExchange topicExchange() {

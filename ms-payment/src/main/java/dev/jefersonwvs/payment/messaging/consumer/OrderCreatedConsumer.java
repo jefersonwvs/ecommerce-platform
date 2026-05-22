@@ -1,5 +1,7 @@
-package dev.jefersonwvs.payment.messaging;
+package dev.jefersonwvs.payment.messaging.consumer;
 
+import dev.jefersonwvs.payment.messaging.config.RabbitMQConfig;
+import dev.jefersonwvs.payment.messaging.event.OrderCreatedEvent;
 import dev.jefersonwvs.payment.service.PaymentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

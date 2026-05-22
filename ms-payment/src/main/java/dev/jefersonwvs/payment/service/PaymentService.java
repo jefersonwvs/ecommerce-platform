@@ -2,8 +2,8 @@ package dev.jefersonwvs.payment.service;
 
 import dev.jefersonwvs.payment.dto.PaymentWebhookRequest;
 import dev.jefersonwvs.payment.entity.Payment;
-import dev.jefersonwvs.payment.messaging.OrderCreatedEvent;
-import dev.jefersonwvs.payment.messaging.PaymentApprovedEvent;
+import dev.jefersonwvs.payment.messaging.event.OrderCreatedEvent;
+import dev.jefersonwvs.payment.messaging.event.PaymentApprovedEvent;
 import dev.jefersonwvs.payment.messaging.outbox.OutboxEvent;
 import dev.jefersonwvs.payment.messaging.outbox.OutboxEventRepository;
 import dev.jefersonwvs.payment.repository.PaymentRepository;

@@ -1,4 +1,4 @@
-package dev.jefersonwvs.payment.messaging;
+package dev.jefersonwvs.payment.messaging.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -22,11 +22,11 @@ public class RabbitMQConfig {
 
   // QUEUES
 
-  static final String PAYMENT_ORDER_CREATED_QUEUE = "payment.order-created";
+  public static final String PAYMENT_ORDER_CREATED_QUEUE = "payment.order-created";
 
-  static final String ORDER_PAYMENT_APPROVED_QUEUE = "order.payment-approved";
+  public static final String ORDER_PAYMENT_APPROVED_QUEUE = "order.payment-approved";
 
-  static final String NOTIFICATION_PAYMENT_APPROVED_QUEUE = "notification.payment-approved";
+  public static final String NOTIFICATION_PAYMENT_APPROVED_QUEUE = "notification.payment-approved";
 
   @Bean
   public TopicExchange topicExchange() {

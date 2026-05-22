@@ -1,10 +1,8 @@
 package dev.jefersonwvs.payment.messaging.outbox;
 
-import dev.jefersonwvs.payment.messaging.RabbitMQConfig;
-
+import dev.jefersonwvs.payment.messaging.config.RabbitMQConfig;
+import dev.jefersonwvs.payment.messaging.event.PaymentApprovedEvent;
 import java.time.Instant;
-
-import dev.jefersonwvs.payment.messaging.PaymentApprovedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
